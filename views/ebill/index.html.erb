@@ -1,0 +1,19 @@
+<h1>Calculate Electricity bill </h1>
+<hr>
+<form action="/ebill/index">
+
+Enter unit price
+<br>
+<input type="text" name="t1" value="<%= @a %>"  />
+<br>
+Enter total consumption
+<br>
+<input type="text" name="t2" value="<%= @b %>"/>
+<br>
+<input type="submit" name="b1" value="Calculate">
+
+</form>
+
+<%= @tbill %>
+<br>
+<img src="/ror11.png" />

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scsapp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="/style.css" rel="stylesheet" type="text/css" >
+    
+  </head>
+
+  <body>
+    <header>
+     <ul><li><a href="/welcome/home">Home</a></li><li><a href="/welcome/about">About us</a></li><li><a href="/welcome/services">Services</a></li><li><a href="/welcome/gallery">Gallery</a></li><li><a href="/welcome/contact">Contact</a></li></ul> 
+    </header>
+    <section>
+       <%= yield %>
+    </section>
+   <footer>
+    <center>&copy;2018 by scs</center>
+   </footer>
+  </body>
+</html>
