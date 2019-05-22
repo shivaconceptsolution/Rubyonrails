@@ -1,11 +1,16 @@
-class SiController < ApplicationController
-  def siload
-  end
+class SiController<ApplicationController
 
-  def silogic
-  	p1 = params[:txtp].to_f
-  	r = params[:txtr].to_f
-  	t = params[:txtt].to_f
-  	@sires = (p1*r*t)/100
-  end
-end
+  def index
+    
+
+  end	
+  def indexlogic
+    p=params['txtnum1']
+    r=params['txtnum2']
+    t=params['txtnum3']
+    @res=(p.to_f*r.to_f*t.to_f)/100
+  end	
+  protect_from_forgery prepend: true
+
+
+end	
